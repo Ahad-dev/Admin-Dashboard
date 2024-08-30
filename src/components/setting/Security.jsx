@@ -14,7 +14,7 @@ const Security = () => {
     transition={{duration:0.5, delay:0.4}}
     className='dark:bg-gray-800 bg-gray-200
 dark:border-gray-700 border-gray-300
- bg-opacity-50 backdrop-blur-lg rounded-xl shadow-lg border space-y-5 p-6 mx-auto w-2/3 mt-8'>
+ bg-opacity-50 backdrop-blur-lg rounded-xl shadow-lg border space-y-5 p-6 mx-auto min-w-48 w-2/3 mt-8'>
         <div className='flex gap-4 items-end'>
             <Lock size={25} color="#6366F1" />
             <h2 className='text-xl 

@@ -29,7 +29,7 @@ const SalesOverviewChart = () => {
       className="dark:bg-gray-800 bg-gray-200
 dark:border-gray-700 border-gray-300 bg-opacity-50 backdrop-blur-lg rounded-xl shadow-lg border p-6 mt-8"
     >
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex items-center justify-between mb-3 max-sm:flex-col max-sm:gap-2">
         <h1 className="dark:text-gray-100 text-gray-900 text-xl font-semibold ">
           Sales Overview
         </h1>

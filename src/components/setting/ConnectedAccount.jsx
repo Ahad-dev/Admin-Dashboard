@@ -45,14 +45,14 @@ const ConnectedAccount = () => {
     }
 
   return (
-    <div className='dark:bg-gray-800 bg-gray-200 bg-opacity-50 shadow-lg backdrop-blur-lg space-y-6 border dark:border-gray-700 border-gray-300 rounded-xl mx-auto w-2/3 min-w-96 p-6 mt-8'>
+    <div className='dark:bg-gray-800 bg-gray-200 bg-opacity-50 shadow-lg backdrop-blur-lg space-y-6 border dark:border-gray-700 border-gray-300 rounded-xl mx-auto w-2/3 min-w-48 p-6 mt-8 '>
         <div className='flex gap-4 items-end'>
             <InfoIcon className='w-8 h-8 text-indigo-500' />
             <h2 className='dark:text-gray-100 text-gray-900 text-xl font-semibold'>Connected Accounts</h2>
         </div>
         <div className='space-y-6'>
             {connectedAccounts.map((account) => (
-                <div key={account.id} className='flex justify-between items-center gap-4'>
+                <div key={account.id} className='flex justify-between items-center gap-4 max-sm:flex-col '>
                     <div className='flex items-center gap-2'>
                         <img src={account.icon} alt={account.name} className='w-8 h-8' />
                         <span className='dark:text-gray-100 text-gray-900 font-semibold'>{account.name}</span>

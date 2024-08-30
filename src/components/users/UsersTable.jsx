@@ -36,10 +36,10 @@ const UsersTable = () => {
         transition={{ duration: 0.6 }}
         className='p-6 dark:bg-gray-800 bg-gray-200 bg-opacity-50 rounded-xl backdrop-blur-lg mt-8 shadow-lg border dark:border-gray-700 border-gray-300'
     >
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center max-sm:flex-col max-sm:gap-2'>
             <h1 className='font-semibold text-3xl dark:text-gray-100 text-gray-900'>Users</h1>
             <div className='relative'>
-                <input value={searchTerm} onChange={handleSearch} type="text" className='pl-10 py-2 outline-none dark:bg-gray-700 bg-gray-200 border dark:border-gray-700 border-gray-300 rounded-xl' placeholder='Search' />
+                <input value={searchTerm} onChange={handleSearch} type="text" className='pl-10 py-2 max-w-44 outline-none text-gray-800 dark:text-gray-300 dark:bg-gray-700 bg-gray-200 border dark:border-gray-700 border-gray-300 rounded-xl' placeholder='Search' />
                 <Search className='absolute top-1/2 left-3  transform -translate-y-1/2 dark:text-gray-400 text-gray-800'/>
             </div>
         </div>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const DangerZone = () => {
   return (
-    <div className='bg-red-600 bg-opacity-30 rounded-xl border space-y-6 border-red-700 p-6 w-2/3 mx-auto my-8'>
+    <div className='bg-red-600 bg-opacity-30 rounded-xl border space-y-6 border-red-700 min-w-32 p-6 w-2/3 mx-auto my-8'>
       <div className='flex gap-4 items-end'>
         <Trash className=' text-red-500' />
         <h2 className='text-xl font-semibold dark:text-gray-100 text-gray-900'>Danger Zone</h2>

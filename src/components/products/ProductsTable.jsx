@@ -32,11 +32,11 @@ const ProductsList = () => {
       transition={{ duration: 0.3,delay:0.3 }}
       className="dark:bg-gray-800 bg-gray-200 bg-opacity-50 backdrop-blur-lg rounded-xl p-4 border dark:border-gray-700 border-gray-300"
     >
-      <div className='flex justify-between items-center'>
+      <div className='flex justify-between items-center max-sm:flex-col max-sm:gap-2'>
         <h2 className='dark:dark:text-gray-100 text-gray-900 font-semibold text-xl '>Product List</h2>
         <div className='relative'>
           <Search size={20} className='absolute top-1/2 left-3 transform -translate-y-1/2 dark:text-gray-400 text-gray-800'/>
-          <input value={searchTerm} onChange={handleSearch} type="text" placeholder='Search' className='pl-10 py-2 outline-none dark:bg-gray-700 bg-gray-300 border dark:border-gray-700 border-gray-300 rounded-xl' />
+          <input value={searchTerm} onChange={handleSearch} type="text" placeholder='Search' className='pl-10 py-2 max-w-44 outline-none text-gray-800 dark:text-gray-300 dark:bg-gray-700 bg-gray-300 border dark:border-gray-700 border-gray-300 rounded-xl' />
         </div>
         
       </div>
